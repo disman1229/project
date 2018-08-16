@@ -1,0 +1,73 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
+    background: #eee;
+}
+header,footer{
+    width: 100%;
+    /*自适应比例（需要配合JS使用document.documentElement.style.fontSize = innerWidth / 10 + "px"）*/
+    height: 1.5rem;
+    font-size: 0.277777rem;
+    border-top: 1px solid #f0f0f0;
+    z-index: 10;
+    /*固定定位*/
+    position: fixed;
+    /*盒子模型-容器*/
+    display: flex;
+}
+header{
+    left: 0;
+    top: 0;
+    background: #ffd600;
+}
+footer{
+    left: 0;
+    bottom: 0;
+    background: rgba(246,246,246,.95);
+}
+footer a{
+    display: block;
+    text-align: center;
+    width: 25%!important;
+    overflow: hidden!important;
+}
+footer dl dt{
+    height: 0.777777rem;
+    padding-top: 0.22222rem;
+    position: relative;
+}
+footer dl dt span{
+    display:inline-block;
+    width: 0.513889rem;
+    height: 0.513889rem;
+}
+footer dl dd{
+    width: 100%;
+    height: 0.708333rem;
+    color:#777;
+}
+footer .home span{
+    background: url("/static/main/img/home.png");
+    background-size: 0.513889rem;
+}
+footer .market span{
+    background: url("/static/main/img/market.png");
+    background-size: 0.513889rem;
+}
+footer .cart span{
+    background: url("/static/main/img/cart.png");
+    background-size: 0.513889rem;
+}
+footer .mine span{
+    background: url("/static/main/img/mine.png");
+    background-size: 0.513889rem;
+}
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+}

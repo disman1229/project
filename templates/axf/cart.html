@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'axf/base.html' %}
+{% load static from staticfiles %}
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'cart/css/cart.css' %}">
+    <script type="text/javascript" charset="UTF-8" src="{% static 'cart/js/cart.js' %}"></script>
+{% endblock linkscript %}
 
-</body>
-</html>
+{% block base %}
+    <h1>disman is a good man</h1>
+    <h1>disman is a nice man</h1>
+    <h1>disman is a cool man</h1>
+    <h1>disman is a handsome man</h1>
+    <h1>cart</h1>
+{% endblock base %}
