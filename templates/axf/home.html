@@ -6,7 +6,17 @@
 {% endblock linkscript %}
 
 {% block base %}
-    <div >
-
+    <div id="home">
+        <!--轮播-->
+        <section class="swiper-container" id="topSwiper">
+            <div class="swiper-wrapper">
+                {% for item in wheelsList %}
+                    <div class="swiper-slide">
+                        <a href="#"><img src="{{ item.img }}" alt=""></a>
+                    </div>
+                {% endfor %}
+            </div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+        </section>
     </div>
 {% endblock base %}

@@ -1,7 +1,8 @@
 from django.shortcuts import render
-
+from .models import Wheel
 def home(request):
-    return render(request,'axf/home.html',{'title':"主页"})
+    wheelsList = Wheel.objects.all()
+    return render(request,'axf/home.html',{'title':"主页","wheelsList":wheelsList})
 
 def market(request):
     return render(request,'axf/market.html',{'title':"闪电超市"})
