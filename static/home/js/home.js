@@ -1,6 +1,7 @@
 $(document).ready(function () {
     setTimeout(function () {
-       swiper1()
+        swiper1()
+        swiper2()
     },100)
     // swiper1()
 })
@@ -14,4 +15,13 @@ function swiper1() {
             pagination:'.swiper-pagination',
             control:true,
         })
-    }
+    };
+
+function swiper2() {
+    var mySwiper2 = new Swiper('#swiperMenu',{
+        slidesPerView:3,
+        paginationClickable:true,
+        spaceBetween:2,
+        loop: false,
+    });
+};

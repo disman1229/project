@@ -42,3 +42,76 @@
 #topMenu nav li img{
     width:2.5rem;
 }
+
+#swiperMenu{
+    width: 100%;
+}
+
+#swiperMenu li img{
+    width: 100%;
+}
+
+.CVS{
+    background: white;
+}
+.CVS h2 img{
+    width: 100%;
+}
+.CVS fieldset a{
+    display: inline-block;
+    width: 49%;
+}
+.CVS fieldset a img{
+    width: 100%;
+}
+.CVS ul{
+    display: flex;
+}
+.CVS ul li{
+    width: 2.5rem;
+    text-align: center;
+    font-size: 0.35rem;
+}
+.CVS ul li img{
+    width: 2.5rem;
+}
+.CVS ol{
+    display: flex;
+    flex-wrap: wrap;
+}
+.CVS ol li{
+    list-style: none;
+}
+.CVS ol a{
+    display: block;
+}
+.CVS ol a img{
+    width: 5rem;
+}
+.mainInfo{
+    background: white;
+}
+.mainInfo section{
+    margin: 0.2rem auto 0;
+    padding: 0.2rem 0;
+    width: 9.2rem;
+}
+.mainInfon section h3{
+    text-align: center;
+    height: 1.2rem;
+    position: relative;
+}
+.mainInfo section h3 a{
+    float: right;
+}
+.mainInfo section h3 span{
+    background: yellow;
+    width: 0.6rem;
+    height: 0.1rem;
+    position:absolute;
+    bottom: 0.25rem;
+    left: 4.3rem;
+}
+.mainInfo section div a img{
+    width: 100%;
+}
