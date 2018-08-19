@@ -4,7 +4,7 @@
     overflow: auto;
     height: 100%;
     width: 100%;
-    padding-bottom: 3rem;
+    /*padding-bottom: 3rem;*/
     position: fixed;
 }
 /*slide*/
@@ -96,13 +96,16 @@
     padding: 0.2rem 0;
     width: 9.2rem;
 }
-.mainInfon section h3{
+.mainInfo section h3{
     text-align: center;
     height: 1.2rem;
     position: relative;
 }
 .mainInfo section h3 a{
-    float: right;
+    font-size: 0.35rem;
+    position:absolute;
+    top: 0.25rem;
+    right: 0.25rem;
 }
 .mainInfo section h3 span{
     background: yellow;
@@ -114,4 +117,46 @@
 }
 .mainInfo section div a img{
     width: 100%;
+}
+
+.mainInfo section ul{
+    display: flex;
+}
+.mainInfo section ul li{
+    width: 34%;
+    padding: 0 0.2rem;
+}
+.mainInfo section ul li a img{
+    width: 3rem;
+}
+.description{
+    font-size: 0.35rem;
+    overflow: hidden;
+}
+
+.mainInfo section ul li span:nth-of-type(2){
+    font-size: 0.4rem;
+    color: red;
+}
+s{
+    font-size: 0.25rem;
+}
+.mainInfo section ul li button {
+    border: 1px solid lightgray;
+    border-radius: 1111px;
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    line-height: 0.0rem;
+    color: orangered;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 3.6rem;
+    background: white;
+}
+.mainInfo section ul li button span{
+    position: relative;
+    top: -0.05rem;
+    margin: auto;
 }

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Wheel,Nav,Mustbuy,Shop,MainShow
+from .models import Wheel,Nav,Mustbuy,Shop,MainShow,FoodTypes,Goods
 def home(request):
     wheelsList = Wheel.objects.all()
     navList = Nav.objects.all()
@@ -23,7 +23,8 @@ def home(request):
     })
 
 def market(request):
-    return render(request,'axf/market.html',{'title':"闪电超市"})
+    leftSlider = FoodTypes.objects.all()
+    return render(request,'axf/market.html',{'title':"闪电超市",'leftSlider':leftSlider})
 
 def cart(request):
     return render(request,'axf/cart.html',{'title':"购物车"})

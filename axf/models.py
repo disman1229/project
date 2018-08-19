@@ -51,3 +51,63 @@ class MainShow(models.Model):
     longname3 = models.CharField(max_length=50)
     price3 = models.CharField(max_length=10)
     marketprice3 = models.CharField(max_length=10)
+
+
+
+# market页
+#分类模型
+class FoodTypes(models.Model):
+    typeid = models.CharField(max_length=10)
+    typename = models.CharField(max_length=20)
+    typesort = models.IntegerField()
+    childtypenames = models.CharField(max_length=150)
+
+#商品模型
+class Goods(models.Model):
+    #商品ID
+    productid = models.CharField(max_length=10)
+    #商品图片
+    productimg = models.CharField(max_length=150)
+    #商品名称
+    productname = models.CharField(max_length=50)
+    # 商品长名称
+    productlongname = models.CharField(max_length=150)
+    #是否精选
+    isxf = models.NullBooleanField(default=False)
+    #是否买一赠一
+    pmdesc = models.CharField(max_length=10)
+    #规格
+    specifics = models.CharField(max_length=20)
+    #价格
+    price = models.CharField(max_length=10)
+    #原价
+    marketprice = models.CharField(max_length=10)
+    #组ID
+    categoryid = models.CharField(max_length=10)
+    #子类组id
+    childcid = models.CharField(max_length=10)
+    #子类组名
+    childcidname = models.CharField(max_length=10)
+    #详情页ID
+    dealerid = models.CharField(max_length=10)
+    #库存
+    storenums = models.IntegerField()
+    #销售数
+    productnum = models.IntegerField()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

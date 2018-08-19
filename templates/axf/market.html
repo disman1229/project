@@ -6,9 +6,26 @@
 {% endblock linkscript %}
 
 {% block base %}
-    <h1>disman is a good man</h1>
-    <h1>disman is a nice man</h1>
-    <h1>disman is a cool man</h1>
-    <h1>disman is a handsome man</h1>
-    <h1>market</h1>
+    <div id="market">
+        <aside>
+            <menu>
+                <ul>
+                    {% for slider in leftSlider %}
+                        <li>
+                            <span class="yellowSlider"></span>
+                            <a href="#">{{ slider.typename }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </menu>
+        </aside>
+        <section>
+            <nav>
+                <ul>
+                    <li><span id="alltypebtn">全部类型</span><span class="glyphicon glyphicon-chevron-down" style="font-weight: 100"></span></li>
+                    <li><span id="showsortbtn">综合排序</span><span class="glyphicon glyphicon-chevron-down" style="font-weight: 100"></span></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
 {% endblock base %}
