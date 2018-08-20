@@ -24,7 +24,8 @@ def home(request):
 
 def market(request):
     leftSlider = FoodTypes.objects.all()
-    return render(request,'axf/market.html',{'title':"闪电超市",'leftSlider':leftSlider})
+    productList = Goods.objects.all()
+    return render(request,'axf/market.html',{'title':"闪电超市",'leftSlider':leftSlider,'productList':productList})
 
 def cart(request):
     return render(request,'axf/cart.html',{'title':"购物车"})
